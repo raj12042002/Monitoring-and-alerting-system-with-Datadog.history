@@ -1,0 +1,506 @@
+If your goal is **to get an AI/Cloud/DevOps job in 2026–2027**, don't try to learn every AI tool. The ecosystem changes too quickly. Instead, learn the technologies that companies consistently use in production.
+
+# AI Technology Roadmap (2020–2026)
+
+| Year     | Major Releases                                                                          |
+| -------- | --------------------------------------------------------------------------------------- |
+| **2020** | GPT-3, AWS DevOps Guru                                                                  |
+| **2021** | GitHub Copilot, OpenTelemetry Stable                                                    |
+| **2022** | ChatGPT, Stable Diffusion, DALL·E 2, LangChain                                          |
+| **2023** | GPT-4, Claude, Llama 2, AWS Bedrock, Amazon Q, Pinecone                                 |
+| **2024** | GPT-4o, Claude 3, Llama 3, Gemini 1.5, Devin, LangGraph, CrewAI                         |
+| **2025** | GPT-5 family, Claude 4 family, Gemini 2.x, Llama 4, OpenAI Agents SDK, Azure AI Foundry |
+| **2026** | Enterprise AI platforms, advanced AI agents, multimodal enterprise applications         |
+
+---
+
+# 1. Large Language Models (LLMs)
+
+### Learn these
+
+* OpenAI GPT
+* Anthropic Claude
+* Google Gemini
+* Meta Llama
+* Mistral AI
+* DeepSeek
+* Qwen
+* Cohere
+
+### Skills
+
+* Prompt Engineering
+* API usage
+* Function Calling / Tool Calling
+* Structured Outputs
+* Streaming Responses
+* Context Windows
+* Token Management
+
+---
+
+# 2. AI Frameworks
+
+These are used to build AI applications.
+
+| Tool              | Purpose             |
+| ----------------- | ------------------- |
+| LangChain         | AI applications     |
+| LangGraph         | AI Agents           |
+| LlamaIndex        | RAG                 |
+| CrewAI            | Multi-Agent         |
+| AutoGen           | Agent Collaboration |
+| Semantic Kernel   | Enterprise AI       |
+| OpenAI Agents SDK | Agent Development   |
+| DSPy              | Prompt Programming  |
+
+### Learn
+
+* Chains
+* Agents
+* Memory
+* Tools
+* Workflows
+* Multi-Agent Systems
+
+---
+
+# 3. Vector Databases
+
+AI cannot search PDFs directly.
+
+It stores embeddings inside Vector DBs.
+
+Learn
+
+* Pinecone
+* Weaviate
+* Qdrant
+* ChromaDB
+* Milvus
+* pgvector
+
+Skills
+
+* Embeddings
+* Similarity Search
+* Hybrid Search
+* Metadata Filtering
+
+---
+
+# 4. Embedding Models
+
+Popular
+
+* OpenAI Embeddings
+* BGE
+* E5
+* Cohere Embed
+* Voyage AI
+
+---
+
+# 5. RAG (Retrieval-Augmented Generation)
+
+Companies rarely use a raw LLM by itself.
+
+Typical production pipeline:
+
+```text
+User
+↓
+
+Question
+
+↓
+
+Embedding Model
+
+↓
+
+Vector Database
+
+↓
+
+Relevant Documents
+
+↓
+
+LLM
+
+↓
+
+Answer
+```
+
+Skills
+
+* Chunking
+* Embeddings
+* Retrieval
+* Reranking
+* Context Injection
+
+---
+
+# 6. Cloud Platforms
+
+### AWS
+
+Learn
+
+* EC2
+* IAM
+* VPC
+* S3
+* Lambda
+* CloudWatch
+* ECS
+* EKS
+* RDS
+* DynamoDB
+* Bedrock
+* API Gateway
+* Secrets Manager
+
+---
+
+### Azure
+
+Learn
+
+* Azure AI
+* Azure OpenAI
+* AKS
+* Functions
+* Cosmos DB
+
+---
+
+### Google Cloud
+
+Learn
+
+* Vertex AI
+* GKE
+* Cloud Run
+* BigQuery
+
+---
+
+# 7. Containers
+
+Must Learn
+
+* Docker
+* Docker Compose
+* Docker Hub
+
+Projects
+
+Containerize
+
+* Flask App
+* FastAPI
+* Node.js
+* React
+
+---
+
+# 8. Kubernetes
+
+Learn
+
+* Pods
+* Services
+* Deployments
+* Ingress
+* ConfigMaps
+* Secrets
+* Volumes
+* StatefulSets
+* Jobs
+* HPA
+* Helm
+
+Cloud
+
+* Amazon EKS
+* Azure AKS
+* Google GKE
+
+---
+
+# 9. Infrastructure as Code
+
+Learn
+
+* Terraform
+* OpenTofu
+* Pulumi (optional)
+
+Topics
+
+* Modules
+* State
+* Remote Backend
+* Variables
+* Workspaces
+
+---
+
+# 10. CI/CD
+
+Learn
+
+* Jenkins
+* GitHub Actions
+* GitLab CI
+* Argo CD
+
+Pipeline
+
+```text
+Git
+
+↓
+
+Build
+
+↓
+
+Test
+
+↓
+
+Docker
+
+↓
+
+Push
+
+↓
+
+Terraform
+
+↓
+
+Kubernetes
+
+↓
+
+Deploy
+```
+
+---
+
+# 11. Git
+
+Must Learn
+
+* Branching
+* Merge
+* Rebase
+* Cherry-pick
+* Pull Request
+* Git Flow
+
+Platforms
+
+* GitHub
+* GitLab
+* Bitbucket
+
+---
+
+# 12. Observability
+
+Learn
+
+Metrics
+
+* Prometheus
+* Grafana
+* Datadog
+
+Logs
+
+* ELK Stack
+* Loki
+
+Tracing
+
+* Jaeger
+* OpenTelemetry
+
+Cloud
+
+* CloudWatch
+
+---
+
+# 13. AI Coding Tools
+
+Learn
+
+* GitHub Copilot
+* Cursor
+* Windsurf
+* Amazon Q Developer
+* Claude Code (where available)
+
+---
+
+# 14. Databases
+
+SQL
+
+* PostgreSQL
+* MySQL
+
+NoSQL
+
+* MongoDB
+* DynamoDB
+* Redis
+
+Vector
+
+* Pinecone
+* Qdrant
+
+---
+
+# 15. Backend
+
+Choose one
+
+Python
+
+or
+
+Java
+
+Python Stack
+
+* FastAPI
+* Flask
+* SQLAlchemy
+* Pydantic
+
+Java Stack
+
+* Spring Boot
+* Hibernate
+
+---
+
+# 16. Frontend
+
+Basic knowledge
+
+* HTML
+* CSS
+* JavaScript
+* TypeScript
+* React
+
+---
+
+# 17. Linux
+
+Must Know
+
+* Shell
+* Bash
+* Process Management
+* Networking
+* Systemd
+* Cron
+* SSH
+
+---
+
+# 18. Networking
+
+Learn
+
+* TCP/IP
+* DNS
+* HTTP
+* HTTPS
+* Load Balancer
+* VPN
+* Firewalls
+* Reverse Proxy
+
+---
+
+# 19. Security
+
+Learn
+
+* IAM
+* OAuth
+* JWT
+* SSL
+* Secrets Management
+* OWASP Top 10
+* Vulnerability Scanning
+
+---
+
+# 20. Programming
+
+Must Learn
+
+Python
+
+Topics
+
+* OOP
+* Exception Handling
+* Async Programming
+* REST APIs
+* Multithreading
+* Testing
+
+---
+
+# Job Roles and Skills
+
+| Role                            | Core Skills                                      |
+| ------------------------------- | ------------------------------------------------ |
+| AI Engineer                     | Python, LLMs, RAG, Vector DBs, LangChain, APIs   |
+| MLOps Engineer                  | Docker, Kubernetes, ML pipelines, Cloud          |
+| DevOps Engineer                 | Linux, AWS, Terraform, Jenkins, Kubernetes       |
+| Cloud Engineer                  | AWS, Azure, Networking, IAM, Terraform           |
+| Platform Engineer               | Kubernetes, GitOps, Observability                |
+| Site Reliability Engineer (SRE) | Linux, Monitoring, Automation, Incident Response |
+| Backend Engineer                | Python/Java, Databases, REST APIs                |
+
+# Suggested Learning Order (12–15 Months)
+
+1. **Computer Science fundamentals:** Linux, networking, Git, Python, SQL.
+2. **Cloud:** AWS (EC2, IAM, VPC, S3, RDS, CloudWatch).
+3. **DevOps:** Docker → Kubernetes → Terraform → Jenkins/GitHub Actions.
+4. **Backend:** FastAPI or Spring Boot, REST APIs, PostgreSQL.
+5. **Observability:** Prometheus, Grafana, Datadog, OpenTelemetry.
+6. **AI:** Prompt engineering → OpenAI/Claude/Gemini APIs → RAG → Vector databases → LangChain/LangGraph → AI agents.
+7. **Projects:** Deploy everything on AWS with CI/CD, monitoring, and documentation.
+
+## Portfolio Projects That Impress Recruiters
+
+Build 6–8 production-style projects such as:
+
+* AI chatbot using RAG + FastAPI + PostgreSQL + Pinecone + GPT.
+* Kubernetes deployment with monitoring using Prometheus and Grafana.
+* Terraform infrastructure provisioning for AWS.
+* CI/CD pipeline using GitHub Actions or Jenkins deploying to EKS.
+* Multi-tier web application with Docker and Kubernetes.
+* AI document search system using LangChain and a vector database.
+* Full observability stack with OpenTelemetry, Grafana, and Datadog.
+* AI agent that automates tasks using tools and APIs.
+
+A portfolio demonstrating these skills is generally much more valuable to employers than simply listing dozens of tools on a résumé. Recruiters and hiring managers typically want evidence that you can design, build, deploy, and troubleshoot real systems end to end.
