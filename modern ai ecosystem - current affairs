@@ -1,0 +1,684 @@
+# Modern AI Ecosystem (2026 Roadmap)
+like OpenAI, Anthropic, Google, Microsoft, Meta, NVIDIA, Salesforce, Databricks, and startups use in **2025–2026** for production AI systems.
+
+---
+
+# 1. Foundation Models (LLMs)
+
+These are the brains of AI.
+
+| Model                  | Company    | Released   |
+| ---------------------- | ---------- | ---------- |
+| GPT-4                  | OpenAI     | 2023       |
+| GPT-4o                 | OpenAI     | May 2024   |
+| GPT-4.1                | OpenAI     | April 2025 |
+| GPT-5                  | OpenAI     | 2025       |
+| Claude 3               | Anthropic  | March 2024 |
+| Claude 4 (Opus/Sonnet) | Anthropic  | May 2025   |
+| Gemini 1.5             | Google     | 2024       |
+| Gemini 2.5             | Google     | 2025       |
+| Llama 3                | Meta       | 2024       |
+| Llama 4                | Meta       | 2025       |
+| Mistral Large          | Mistral AI | 2024       |
+| DeepSeek V3/R1         | DeepSeek   | 2025       |
+| Qwen 3                 | Alibaba    | 2025       |
+
+---
+
+# 2. LLM APIs
+
+Used to access models.
+
+| API           | Company   |
+| ------------- | --------- |
+| OpenAI API    | OpenAI    |
+| Anthropic API | Anthropic |
+| Gemini API    | Google    |
+| Groq API      | Groq      |
+| Together AI   | Together  |
+| Fireworks AI  | Fireworks |
+| Cohere API    | Cohere    |
+| Mistral API   | Mistral   |
+
+---
+
+# 3. Prompt Engineering
+
+Purpose
+
+Control LLM behavior.
+
+Techniques
+
+* Zero-shot
+* One-shot
+* Few-shot
+* Chain of Thought
+* ReAct
+* Self Consistency
+* Tree of Thoughts
+* Role Prompting
+* Structured Prompting
+
+Libraries
+
+* DSPy
+* Guidance
+* Instructor
+
+---
+
+# 4. Embedding Models
+
+Convert text → vectors.
+
+Popular Models
+
+| Model                  | Company      |
+| ---------------------- | ------------ |
+| text-embedding-3-small | OpenAI       |
+| text-embedding-3-large | OpenAI       |
+| BGE                    | BAAI         |
+| E5                     | Microsoft    |
+| GTE                    | Alibaba      |
+| Nomic Embed            | Nomic        |
+| Jina Embeddings        | Jina AI      |
+| Sentence Transformers  | Hugging Face |
+
+---
+
+# 5. Vector Databases
+
+Store embeddings.
+
+| Database             | Year |
+| -------------------- | ---- |
+| Pinecone             | 2021 |
+| Weaviate             | 2019 |
+| Qdrant               | 2021 |
+| Milvus               | 2019 |
+| Chroma               | 2023 |
+| pgvector             | 2023 |
+| Elasticsearch Vector | 2023 |
+| Redis Vector         | 2023 |
+| MongoDB Atlas Vector | 2023 |
+| LanceDB              | 2023 |
+
+---
+
+# 6. RAG (Retrieval-Augmented Generation)
+
+Pipeline
+
+```
+Documents
+
+↓
+
+Chunking
+
+↓
+
+Embeddings
+
+↓
+
+Vector DB
+
+↓
+
+Retriever
+
+↓
+
+LLM
+
+↓
+
+Answer
+```
+
+Advanced RAG
+
+* Naive RAG
+* Hybrid Search
+* Parent Document Retrieval
+* Multi Query Retrieval
+* Contextual Retrieval
+* Graph RAG
+* Agentic RAG
+* Corrective RAG (CRAG)
+* Self RAG
+
+Popular Frameworks
+
+* LangChain
+* LlamaIndex
+* Haystack
+
+---
+
+# 7. AI Agents (Agentic AI)
+
+An AI agent can:
+
+* Think
+* Plan
+* Use tools
+* Call APIs
+* Remember
+* Execute workflows
+
+Architecture
+
+```
+Goal
+
+↓
+
+Planner
+
+↓
+
+Tool Selection
+
+↓
+
+Execution
+
+↓
+
+Reflection
+
+↓
+
+Final Answer
+```
+
+---
+
+Popular Agent Frameworks
+
+| Framework         |
+| ----------------- |
+| LangGraph         |
+| CrewAI            |
+| AutoGen           |
+| OpenAI Agents SDK |
+| SmolAgents        |
+| PydanticAI        |
+| Agno              |
+| Semantic Kernel   |
+
+---
+
+# 8. MCP (Model Context Protocol)
+
+Introduced by Anthropic in **late 2024** and rapidly adopted during **2025**.
+
+Purpose
+
+Standard protocol for connecting AI models to external tools, data sources, and applications.
+
+Example
+
+```
+LLM
+
+↓
+
+MCP Client
+
+↓
+
+MCP Server
+
+↓
+
+GitHub
+
+Database
+
+Slack
+
+Google Drive
+
+Filesystem
+
+Browser
+```
+
+Popular MCP Servers
+
+* GitHub
+* GitLab
+* PostgreSQL
+* SQLite
+* Filesystem
+* Google Drive
+* Slack
+* Notion
+* Jira
+* Docker
+* Browser automation
+
+---
+
+# 9. AI Memory
+
+Memory makes agents remember.
+
+Types
+
+### Short-term Memory
+
+Current conversation
+
+Example
+
+Chat history
+
+---
+
+### Long-term Memory
+
+Persistent memory
+
+Example
+
+User preferences
+
+---
+
+### Semantic Memory
+
+Facts
+
+Example
+
+```
+John likes Python.
+```
+
+---
+
+### Episodic Memory
+
+Past actions
+
+Example
+
+```
+Yesterday user deployed a chatbot.
+```
+
+Libraries
+
+* Mem0
+* LangMem
+* Zep
+* Redis
+* PostgreSQL
+* Vector DB
+
+---
+
+# 10. Observability
+
+Monitor AI systems.
+
+Tracks
+
+* Prompt
+* Response
+* Latency
+* Cost
+* Tokens
+* Errors
+* Hallucination
+* User feedback
+
+Popular Tools
+
+| Tool             |
+| ---------------- |
+| LangSmith        |
+| LangFuse         |
+| Arize Phoenix    |
+| Helicone         |
+| Weights & Biases |
+| MLflow           |
+| OpenTelemetry    |
+| Braintrust       |
+
+---
+
+# 11. AI Security
+
+Protect AI systems.
+
+Threats
+
+* Prompt Injection
+* Jailbreak
+* Data Leakage
+* Tool Misuse
+* Hallucination
+* API Abuse
+* Model Theft
+* Prompt Leakage
+
+Protection
+
+* Guardrails
+* Input Validation
+* Output Filtering
+* PII Detection
+* Secret Scanning
+* Human Approval
+* RBAC
+* Sandboxing
+
+Tools
+
+* NVIDIA NeMo Guardrails
+* Guardrails AI
+* Lakera
+* Protect AI
+* Microsoft Prompt Shields
+
+---
+
+# 12. Automation
+
+Automate business workflows.
+
+Examples
+
+```
+Email
+
+↓
+
+AI
+
+↓
+
+Generate Reply
+
+↓
+
+CRM Update
+
+↓
+
+Slack Notification
+```
+
+Popular Platforms
+
+* n8n
+* Zapier
+* Make
+* Pipedream
+* Activepieces
+* Windmill
+
+---
+
+# 13. Tool Calling
+
+LLMs can call functions.
+
+Example
+
+```
+User
+
+↓
+
+Weather Tool
+
+↓
+
+Weather API
+
+↓
+
+LLM
+
+↓
+
+Answer
+```
+
+Libraries
+
+* OpenAI Function Calling
+* LangChain Tools
+* MCP
+* PydanticAI Tools
+
+---
+
+# 14. Orchestration Frameworks
+
+Manage complex AI workflows.
+
+Popular
+
+* LangGraph
+* CrewAI
+* AutoGen
+* Prefect
+* Airflow
+* Temporal
+
+---
+
+# 15. AI Evaluation
+
+Measure model quality.
+
+Metrics
+
+* Accuracy
+* Precision
+* Recall
+* BLEU
+* ROUGE
+* Faithfulness
+* Groundedness
+* Hallucination Rate
+
+Tools
+
+* DeepEval
+* Ragas
+* Promptfoo
+* OpenAI Evals
+
+---
+
+# 16. Deployment
+
+Deploy AI applications.
+
+Platforms
+
+* Docker
+* Kubernetes
+* AWS
+* Azure AI
+* Google Vertex AI
+* Databricks
+* Hugging Face Inference
+* Modal
+* RunPod
+* Together AI
+
+---
+
+# 17. MLOps / LLMOps
+
+Manage AI lifecycle.
+
+Pipeline
+
+```
+Data
+
+↓
+
+Training
+
+↓
+
+Fine Tuning
+
+↓
+
+Evaluation
+
+↓
+
+Deployment
+
+↓
+
+Monitoring
+
+↓
+
+Feedback
+
+↓
+
+Retraining
+```
+
+Tools
+
+* MLflow
+* Kubeflow
+* Weights & Biases
+* DVC
+* BentoML
+* KServe
+* Ray Serve
+
+---
+
+# 18. Fine-Tuning
+
+Customize LLMs.
+
+Methods
+
+* Full Fine-Tuning
+* LoRA
+* QLoRA
+* PEFT
+* RLHF
+* DPO
+
+Frameworks
+
+* Hugging Face Transformers
+* PEFT
+* TRL
+* Axolotl
+* Unsloth
+
+---
+
+# 19. Multimodal AI
+
+Input
+
+* Text
+* Image
+* Video
+* Audio
+* PDF
+
+Models
+
+* GPT-4o
+* GPT-5
+* Gemini 2.5
+* Claude 4
+* Qwen VL
+* Llama 4
+
+---
+
+# 20. Complete Modern AI Stack (2026)
+
+```text
+                         USER
+                           │
+                           ▼
+                  Frontend (Web/Mobile)
+                           │
+                           ▼
+                 Prompt Engineering Layer
+                           │
+                           ▼
+                    AI Agent (Planner)
+                           │
+         ┌─────────────────┼──────────────────┐
+         ▼                 ▼                  ▼
+      Memory            Tool Calling        Automation
+   (Mem0/Zep)        (MCP/Functions)    (n8n/Zapier)
+         │                 │                  │
+         └─────────────────┼──────────────────┘
+                           ▼
+                     RAG Pipeline
+                           │
+      Documents → Chunking → Embeddings
+                           │
+                           ▼
+                 Vector Database
+      (Pinecone/Qdrant/Weaviate/Milvus)
+                           │
+                           ▼
+                  Retriever / Re-ranker
+                           │
+                           ▼
+                     LLM API Layer
+(OpenAI • Anthropic • Gemini • Groq • Mistral)
+                           │
+                           ▼
+                Guardrails / AI Security
+                           │
+                           ▼
+              Observability & Evaluation
+      (LangSmith • LangFuse • Phoenix • Ragas)
+                           │
+                           ▼
+              Deployment & LLMOps Platform
+     (Docker • Kubernetes • MLflow • BentoML)
+```
+
+## Recommended Learning Order (2026)
+
+1. Python + FastAPI
+2. Git & Docker
+3. Prompt Engineering
+4. LLM APIs (OpenAI, Gemini, Claude)
+5. Embeddings
+6. Vector Databases
+7. RAG (Basic → Advanced)
+8. Tool Calling & Function Calling
+9. MCP (Model Context Protocol)
+10. AI Agents (LangGraph, OpenAI Agents SDK, CrewAI)
+11. Memory Systems (Mem0, Zep, LangMem)
+12. Automation (n8n, Zapier, Pipedream)
+13. AI Security & Guardrails
+14. Observability (LangSmith, LangFuse, Phoenix)
+15. Evaluation (Ragas, DeepEval, Promptfoo)
+16. LLMOps & Deployment (MLflow, Docker, Kubernetes, BentoML)
+17. Fine-tuning (LoRA/QLoRA) and Multimodal AI
+
+Mastering these topics in order will give you the skills needed to build modern production-grade AI assistants, RAG systems, agentic workflows, and enterprise AI applications.
